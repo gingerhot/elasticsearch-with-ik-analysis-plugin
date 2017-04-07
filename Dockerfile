@@ -47,7 +47,7 @@ RUN set -x \
         && cd /usr/share/elasticsearch \
         && git clone https://github.com/medcl/elasticsearch-analysis-ik \
         && cd elasticsearch-analysis-ik \
-        && git checkout tags/$ELASTICSEARCH_DEB_VERSION \
+        && git checkout tags/v$ELASTICSEARCH_DEB_VERSION \
         && mvn clean \
         && mvn compile \
         && mvn package \
