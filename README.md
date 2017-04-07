@@ -7,4 +7,4 @@ The Dockerfile base is from: https://github.com/docker-library/elasticsearch , a
 Elasticsearch version: 5.3.0
 IK analysis plugin version: current master(5.3.0)
 
-You can make a change in Dockerfile to match your need.
+You can make a change in Dockerfile to match your requirement.
