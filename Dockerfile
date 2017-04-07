@@ -1,4 +1,4 @@
-FROM maven:3.3.9-jdk-8 
+FROM maven:3.3.9-jdk-8
 
 MAINTAINER B1nj0y <idegorepl@gmail.com>
 
@@ -47,6 +47,7 @@ RUN set -x \
         && cd /usr/share/elasticsearch \
         && git clone https://github.com/medcl/elasticsearch-analysis-ik \
         && cd elasticsearch-analysis-ik \
+        && git checkout tags/$ELASTICSEARCH_DEB_VERSION \
         && mvn clean \
         && mvn compile \
         && mvn package \
